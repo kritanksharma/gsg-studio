@@ -4,27 +4,7 @@ import s2 from "../static/s2.jpeg";
 import s3 from "../static/s3.jpeg";
 import logo2 from "../static/logo2.jpeg";
 export default function About() {
-  const workData = [
-    {
-      title: "Photoshoot",
-      content1:
-        " Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. Lorem Ipsum has been the industry s standard dummy text ever",
-      content2: " ~ reactnest",
-    },
-    {
-      title: "Editing 3D/2D",
-      content1:
-        " Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. Lorem Ipsum has been the industry s standard dummy text ever",
-      content2: " ~ reactnest",
-    },
-    {
-      title: "Music",
-      content1:
-        " Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. Lorem Ipsum has been the industry s standard dummy text ever",
-      content2: " ~ reactnest",
-    },
-
-  ];
+  const workData = []; // client review data [title , content1 , content2]
   const setImages = [
     { image: s1 },
     { image: s2},
@@ -59,12 +39,12 @@ export default function About() {
             <div className="col-md-4">
               <img
                 src={logo2}
-                className="img-fluid rounded-start mt-4"
+                className="img-fluid rounded-start mt-5"
                 alt="..."
                 style={{width:"300px" , height:'300px'}}
               />
             </div>
-            <div className="col-md-8 mt-4">
+            <div className="col-md-8">
             <h3 className="display-6  fw-bold text-end px-5">{about[0].title}</h3>
               <div className="card-body">
                 <p className="card-text text-start">
@@ -85,11 +65,11 @@ export default function About() {
         className="card w-100 p-3"
         style={{ border: "none", borderRadius: "0px" }}
       >
-        <h3 className="display-6 text-black mx-3 text-start mx-5">{title1}</h3>
+        <h3 className="display-6 text-black mx-3 text-start mx-5">{ workData.length>0 ? title1 : ''}</h3>
    
          
             <div className="row g-0 mx-5 mb-5">
-              {workData.map((item, index) => (
+              {workData.length>0 && workData.map((item, index) => (
                 <div key={index} className="col-md-4">
                   <div className="container text-center my-1">
                     <div className="row">
@@ -126,7 +106,7 @@ export default function About() {
                    <div className="card border-0 shadow-lg overflow-hidden card-focus-animation mx-3 rounded-0 my-3" style={{width:'40vh'}}>
                   <img
                     src={item.image}
-                    className="img-fluid rounded-0 p-3 img-grayscale"
+                    className="img-fluid rounded-0 p-3"
                     alt="..."
                   /></div>
                 </div>

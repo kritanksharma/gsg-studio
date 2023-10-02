@@ -9,7 +9,7 @@ export default function navBar(props) {
         style={{ backgroundColor: "black" , border:'none'}}
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand" href="#home">
           <img
               src={logo}
               alt="Logo"

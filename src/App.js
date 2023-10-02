@@ -70,8 +70,8 @@ function App() {
   return (
     <div className="App">
       <NavBar title="GET SET GO Studio"></NavBar>
-
-      <MainSection />
+      <div id="home"> 
+      <MainSection /></div>
      <div id="services"> 
      <div className="py-1"></div>
      <MoreInfo head={moreinfoHead} body={moreinfoBody} /></div>

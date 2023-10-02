@@ -5,7 +5,7 @@ export default function MainSection() {
   const content=" We're Get Set Go - a production house where creativity knows no bounds. With captivating commercials, captivating music videos, thrilling fiction productions, 3D modelling, and VFX, we bring imagination to life. Join the hype as we make waves in the entertainment world!"
   return (
     <div>
-     <div class="card"
+     <div className="card"
        style={{
         backgroundColor: "black",
         width: "100%",
