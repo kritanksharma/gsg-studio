@@ -1,0 +1,58 @@
+.card-hover-animation {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transitions for both transform and box-shadow */
+  }
+  
+  .card-hover-animation:hover {
+    box-shadow: 0px 10px 20px rgba(208, 203, 203, 0.794); /* Add a subtle shadow on hover */
+    transform: translateY(-10px); 
+    color:#DC3545!important;
+  }
+  .content-hover-animation:hover {
+    transform: scale(1.05) translateY(-10px);
+  }
+  .icon:hover{
+    color:#DC3545 !important; 
+  
+  }
+  .theme-text-color{
+    color: #DC3545!important; 
+  }
+  .img-grayscale {
+    filter: grayscale(100%);
+  }
+  .custom-input:focus {
+    border-color: #DC3545 !important;
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25) !important;
+  }
+.card-focus-animation:hover{
+  box-shadow: 0px 10px 20px rgba(208, 203, 203, 0.794);
+  background-color: #D3D3D3;
+  background-image: linear-gradient(white, #D3D3D3);
+}
+.img-grayscale{
+  filter: grayscale(100%);
+}
+.img-grayscale:hover{
+  filter: grayscale(0%);
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+.scroll-loop {
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: scrollLoop 10s linear infinite; /* Adjust the animation duration as needed */
+}
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+  
