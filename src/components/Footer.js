@@ -31,15 +31,11 @@ export default function Footer() {
           <span>  India's Premium VASS Platfrom</span>
         </h2>
         <p className="card-text mb-4">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including.
+        At Get Set Go, we are the builders of imagination, the artists of storytelling, and the creators of fascinating visuals. Our squad is passionate about bringing ideas to life and we are the masters when it comes to providing top-notch studio services and a wide range of video production solutions.
+
+        </p>
+        <p className="card-text mb-4">
+        Welcome to Get Set Go, the creative production studio that's here to take your brand to soaring heights! We are the architects of high-quality content that not only speaks your message but elevates it to a level of excellence you've never imagined. What makes us different? We're not just content creators; we're brand experts. We take the time to truly understand your business, so what we create is a perfect match for your brand.
         </p>
         <p>
           <a href="/" className="text-dark icon">

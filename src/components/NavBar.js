@@ -6,11 +6,11 @@ export default function navBar(props) {
       <nav
         className="navbar navbar-expand-lg"
         data-bs-theme="dark"
-        style={{ backgroundColor: "black" , border:'none'}}
+        style={{ backgroundColor: "black", border: "none" }}
       >
         <div className="container-fluid">
           <a className="navbar-brand" href="#home">
-          <img
+            <img
               src={logo}
               alt="Logo"
               width="60"
@@ -38,7 +38,7 @@ export default function navBar(props) {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#services">
-                 Services
+                  Services
                 </a>
               </li>
               <li className="nav-item">

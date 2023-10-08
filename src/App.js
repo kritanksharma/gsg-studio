@@ -19,7 +19,7 @@ function App() {
   const moreinfoHead = [
     {
       headDescription:
-        " At Get Set Go, we are the builders of imagination, the artists of storytelling, and the creators of fascinating visuals. Our squad is passionate about bringing ideas to life and we are the masters when it comes to providing top-notch studio services and a wide range of video production solutions.",
+        "At Get Set Go, we are the builders of imagination, the artists of storytelling, and the creators of fascinating visuals. Our squad is passionate about bringing ideas to life and we are the masters when it comes to providing top-notch studio services and a wide range of video production solutions. At Get Set Go, our hearts beat to the rhythm of creativity, and our specialty is bringing your finest ideas to life.",
     },
   ];
   const moreinfoBody = [
@@ -70,19 +70,23 @@ function App() {
   return (
     <div className="App">
       <NavBar title="GET SET GO Studio"></NavBar>
-      <div id="home"> 
-      <MainSection /></div>
-     <div id="services"> 
-     <div className="py-1"></div>
-     <MoreInfo head={moreinfoHead} body={moreinfoBody} /></div>
-     
-      <Service></Service>
-      <div id="about"> 
-     <div className="py-1"></div>
-      <About></About></div>
+      <div id="home">
+        <MainSection />
+      </div>
+      <div id="services">
+        <div className="py-1"></div>
+        <MoreInfo head={moreinfoHead} body={moreinfoBody} />
+      </div>
 
-      <div id="contact"> 
-      <Contact></Contact></div>
+      <Service></Service>
+      <div id="about">
+        <div className="py-1"></div>
+        <About></About>
+      </div>
+
+      <div id="contact">
+        <Contact></Contact>
+      </div>
 
       <Footer></Footer>
     </div>

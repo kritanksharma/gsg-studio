@@ -68,7 +68,7 @@ export default function Form() {
       {complete === false ? (
         <div
           className="card text-starttext-light mx-3"
-          style={{ width: "600px" , backgroundColor:'black'}}
+          style={{ width: "600px", backgroundColor: "black" }}
         >
           <div className="card-body text-light text-start">
             <form>
@@ -79,7 +79,7 @@ export default function Form() {
                 <input
                   type="email"
                   className="form-control custom-input"
-                  style={{backgroundColor:'black'}}
+                  style={{ backgroundColor: "black" }}
                   id="email"
                   aria-describedby="emailHelp"
                   value={email}
@@ -99,7 +99,7 @@ export default function Form() {
                 <input
                   type="text"
                   className="form-control custom-input"
-                  style={{backgroundColor:'black'}}
+                  style={{ backgroundColor: "black" }}
                   id="subject"
                   value={subject}
                   onChange={handleInputChange}
@@ -113,7 +113,7 @@ export default function Form() {
                   type="text"
                   rows="4"
                   className="form-control custom-input"
-                  style={{backgroundColor:'black'}}
+                  style={{ backgroundColor: "black" }}
                   id="message"
                   value={message}
                   onChange={handleInputChange}
@@ -122,9 +122,7 @@ export default function Form() {
               <button
                 type="submit"
                 disabled={!isEnable()}
-                className={`btn btn-${
-                  isEnable() ? "danger" : "danger"
-                }`}
+                className={`btn btn-${isEnable() ? "danger" : "danger"}`}
                 onClick={handleFormSubmit}
               >
                 Submit
@@ -132,11 +130,11 @@ export default function Form() {
             </form>
           </div>
           <img
-          src={bg2}
-          className="card-img-bottom"
-          alt="..."
-          style={{ height: "150px" }}
-        />
+            src={bg2}
+            className="card-img-bottom"
+            alt="..."
+            style={{ height: "150px" }}
+          />
         </div>
       ) : null}
 
