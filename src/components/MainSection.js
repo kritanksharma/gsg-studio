@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import bg1 from "../static/bg1.mp4";
 
-export default function MainSection() {
+export default function MainSection({ onExploreMoreClick }) {
   const [dynamicText, setDynamicText] = useState("Visual Masters Converge.");
   const textOptions = [
     "Visual Masters Converge.",
@@ -46,10 +46,8 @@ export default function MainSection() {
           </h3>
           <p className="card-text fs-6 text-secondary">{content}</p>
 
-          <button type="button" className="btn btn-outline-danger mr-3 mt-2">
-            <a className="nav-link" href="/service">
+          <button type="button" className="btn btn-outline-danger mr-3 mt-2" onClick={() => onExploreMoreClick(true)}>
               Explore More
-            </a>
           </button>
         </div>
         <video

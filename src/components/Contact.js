@@ -14,7 +14,7 @@ export default function Contact() {
   return (
     <div className="bg-black">
       {showForm === false ? (
-        <div className="card mb-3 w-100 bg-black text-light text-start">
+        <div className="card pb-3 w-100 bg-black text-light text-start">
           <div className="row g-0">
             <div className="col-md-4">
               <img src={contact1} className="img-fluid" alt="..." />

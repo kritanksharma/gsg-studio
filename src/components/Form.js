@@ -68,7 +68,7 @@ export default function Form() {
       {complete === false ? (
         <div
           className="card text-starttext-light mx-3"
-          style={{ width: "600px", backgroundColor: "black" }}
+          style={{ width: "600px", backgroundColor: "black" , color:"white"}}
         >
           <div className="card-body text-light text-start">
             <form>
@@ -79,7 +79,7 @@ export default function Form() {
                 <input
                   type="email"
                   className="form-control custom-input"
-                  style={{ backgroundColor: "black" }}
+                  style={{ backgroundColor: "black" , color:"white" }}
                   id="email"
                   aria-describedby="emailHelp"
                   value={email}
@@ -94,12 +94,12 @@ export default function Form() {
               </div>
               <div className="mb-3">
                 <label htmlFor="subject" className="form-label">
-                  What is your security objective?
+                 Your name
                 </label>
                 <input
                   type="text"
                   className="form-control custom-input"
-                  style={{ backgroundColor: "black" }}
+                  style={{ backgroundColor: "black" , color:"white"}}
                   id="subject"
                   value={subject}
                   onChange={handleInputChange}
@@ -107,13 +107,13 @@ export default function Form() {
               </div>
               <div className="mb-3">
                 <label htmlFor="message" className="form-label">
-                  Message
+                How can we work together?
                 </label>
                 <textarea
                   type="text"
                   rows="4"
                   className="form-control custom-input"
-                  style={{ backgroundColor: "black" }}
+                  style={{ backgroundColor: "black" , color:"white"}}
                   id="message"
                   value={message}
                   onChange={handleInputChange}

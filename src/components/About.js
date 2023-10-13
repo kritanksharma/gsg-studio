@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import s1 from "../static/s1.jpeg";
 import s2 from "../static/s2.jpeg";
 import s3 from "../static/s3.jpeg";
@@ -6,7 +6,7 @@ import logo2 from "../static/about.png";
 export default function About() {
   const workData = [
     {
-      title: "Photogrphy",
+      title: "Photography",
       content1:
         "We are the architects of high-quality content that not only speaks your message but elevates it to a level of excellence you have never imagined.",
       content2: "~reactnest",
@@ -24,7 +24,8 @@ export default function About() {
       content2: "~reactnest",
     },
   ]; // client review data [title , content1 , content2]
-  const setImages = [
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const rawImages = [
     { image: s1 },
     { image: s2 },
     { image: s3 },
@@ -59,14 +60,41 @@ export default function About() {
     },
   ];
 
+  const [images, setImages] = useState(rawImages);
+
+  useEffect(() => {
+    const scrollContainer = document.querySelector(".scroll-container");
+
+    function handleScroll() {
+      if (scrollContainer) {
+        const containerWidth = scrollContainer.offsetWidth;
+        const imagesWidth = images.length * 40;
+        if (containerWidth - scrollContainer.scrollLeft < imagesWidth) {
+          // If the remaining scroll width is less than the total width of images
+          setImages((prevImages) => [...prevImages, ...rawImages]);
+        }
+      }
+    }
+
+    if (scrollContainer) {
+      scrollContainer.addEventListener("scroll", handleScroll);
+    }
+
+    return () => {
+      if (scrollContainer) {
+        scrollContainer.removeEventListener("scroll", handleScroll);
+      }
+    };
+  }, [images, rawImages]);
+
   return (
     <>
       <div
-        className="card w-100 p-3"
+        className="card w-100 p-3 bg-dark text-light"
         style={{ border: "none", borderRadius: "0px" }}
       >
         <div
-          className="card w-100 p-3"
+          className="card w-100 p-3 bg-dark text-light"
           style={{ border: "none", borderRadius: "0px" }}
         >
           <div className="row g-0">
@@ -94,24 +122,24 @@ export default function About() {
       </div>
       <div></div>
       <div
-        className="card w-100 p-3"
+        className="card w-100 p-3 bg-dark text-light"
         style={{ border: "none", borderRadius: "0px" }}
       >
-        <h3 className="display-6 text-black text-start mx-2">
+        <h3 className="display-6 text-light text-start mx-2">
           {workData.length > 0 ? title1 : ""}
         </h3>
-        <p className="text-black  mx-2 text-start ">
+        <p className=" mx-2 text-start text-light">
           {workData.length > 0 ? subtitle1 : ""}
         </p>
 
-        <div className="row g-0 mx-4 mb-5">
+        <div className="row g-0 mx-4 mb-5 bg-dark text-light">
           {workData.length > 0 &&
             workData.map((item, index) => (
-              <div key={index} className="col-md-4">
-                <div className="container text-center my-1">
+              <div key={index} className="col-md-4 ">
+                <div className="container text-center my-1" >
                   <div className="row">
                     <div className="col">
-                      <div className="card card-focus-animation">
+                      <div className="card card-focus-animation text-light" style={{backgroundColor:'#1A1C23'}}>
                         <span className="position-absolute top-0 start-100 translate-middle  bg-danger badge">
                           New
                         </span>
@@ -123,7 +151,7 @@ export default function About() {
                                 {item.content1}
                               </p>
                               <p className="card-text">
-                                <small className="text-body-secondary">
+                                <small className="text-body-light">
                                   {item.content2}
                                 </small>
                               </p>
@@ -138,25 +166,25 @@ export default function About() {
             ))}
         </div>
 
-        <h3 className="display-6 text-black mx-2 text-start ">{title2}</h3>
-        <p className="text-black  mx-2 text-start ">{subtitle2}</p>
+        <h3 className="display-6 text-light bg-dark mx-2 text-start ">{title2}</h3>
+        <p className="text-light bg-dark mx-2 text-start ">{subtitle2}</p>
 
-        <div className="d-flex flex-row mb-3 mx-5 px-5 overflow-auto">
-          {setImages.map((item, index) => (
-            <div key={index} className="scroll-loop">
-              <div
-                className="card border-0 shadow-lg overflow-hidden card-focus-animation mx-3 rounded-0 my-3"
-                style={{ width: "40vh" }}
-              >
-                <img
-                  src={item.image}
-                  className="img-fluid rounded-0 p-3"
-                  alt="..."
-                />
-              </div>
-            </div>
-          ))}
+        <div className="d-flex flex-row mb-3 mx-5 px-5 overflow-auto scroll-container">
+      {images.map((item, index) => (
+        <div key={index} className="scroll-loop">
+          <div
+            className="card border-0 shadow-lg overflow-hidden card-focus-animation mx-2 rounded-0 my-3"
+            style={{ width: "40vh", backgroundColor: "#1A1C23" }}
+          >
+            <img
+              src={item.image}
+              className="img-fluid rounded-0 p-3"
+              alt="..."
+            />
+          </div>
         </div>
+      ))}
+    </div>
       </div>
     </>
   );

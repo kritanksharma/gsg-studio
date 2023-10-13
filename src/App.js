@@ -1,3 +1,5 @@
+
+import React, { useState} from "react";
 import "./App.css";
 import Footer from "./components/Footer";
 import MainSection from "./components/MainSection";
@@ -14,7 +16,13 @@ import modelling from "./static/3d.png";
 import service from "./static/service.png";
 import Service from "./components/Service";
 import About from "./components/About";
+import Explore from "./components/Explore";
 function App() {
+  const [exploreMore, setExploreMore] = useState(false);
+
+  const handleExploreMoreClick = (value) => {
+    setExploreMore(value);
+  };
   // More info content
   const moreinfoHead = [
     {
@@ -65,30 +73,24 @@ function App() {
     },
   ];
 
-  // studio
-  //const images=[s1,s2,s3]
   return (
     <div className="App">
       <NavBar title="GET SET GO Studio"></NavBar>
-      <div id="home">
-        <MainSection />
-      </div>
-      <div id="services">
-        <div className="py-1"></div>
-        <MoreInfo head={moreinfoHead} body={moreinfoBody} />
-      </div>
-
-      <Service></Service>
-      <div id="about">
-        <div className="py-1"></div>
-        <About></About>
-      </div>
-
-      <div id="contact">
-        <Contact></Contact>
-      </div>
+      {exploreMore===false ? (   <><div id="home">
+          <MainSection onExploreMoreClick={handleExploreMoreClick} />
+        </div><div id="services">
+            <div className="py-1" style={{ background: '#1A1C23' }}></div>
+            <MoreInfo head={moreinfoHead} body={moreinfoBody} />
+          </div><Service></Service><div id="about">
+            <div className="py-1 bg-dark"></div>
+            <About></About>
+          </div><div id="contact">
+            <Contact></Contact>
+          </div></>): (<div> <Explore></Explore></div>)}
+   
 
       <Footer></Footer>
+     
     </div>
   );
 }
