@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/gsg-studio/static/css/main.6272a2e4.css",
-    "main.js": "/gsg-studio/static/js/main.f53ce3b6.js",
+    "main.css": "/gsg-studio/static/css/main.15b749e1.css",
+    "main.js": "/gsg-studio/static/js/main.330fe750.js",
     "static/js/787.7016f703.chunk.js": "/gsg-studio/static/js/787.7016f703.chunk.js",
     "static/media/bg1.mp4": "/gsg-studio/static/media/bg1.88ebbc8e2f37f4aa18ad.mp4",
     "static/media/bg3.png": "/gsg-studio/static/media/bg3.338603112bfe4968e821.png",
     "static/media/bg2.png": "/gsg-studio/static/media/bg2.19cf4808fa2fbad284d3.png",
     "static/media/s3.jpeg": "/gsg-studio/static/media/s3.1bfaf6bf8018e87af818.jpeg",
     "static/media/s2.jpeg": "/gsg-studio/static/media/s2.39ee937173f16b325517.jpeg",
+    "static/media/about.png": "/gsg-studio/static/media/about.cb5e1d6bee8652781147.png",
     "static/media/music.png": "/gsg-studio/static/media/music.f6db64abf422e79fdc84.png",
     "static/media/3d.png": "/gsg-studio/static/media/3d.e8b165cdaf618df42224.png",
     "static/media/contact.png": "/gsg-studio/static/media/contact.5110708f5a3cf9b516ce.png",
-    "static/media/about.png": "/gsg-studio/static/media/about.b97c413478a7664572e6.png",
     "static/media/docs.png": "/gsg-studio/static/media/docs.a88f902712b4b4b00032.png",
     "static/media/photoshoot.png": "/gsg-studio/static/media/photoshoot.8164b7df5126f7f0fc41.png",
     "static/media/completed.png": "/gsg-studio/static/media/completed.d2cc5a2ec833760d01d3.png",
@@ -22,12 +22,12 @@
     "static/media/s1.jpeg": "/gsg-studio/static/media/s1.508b05379272fe278eda.jpeg",
     "static/media/logo.png": "/gsg-studio/static/media/logo.993648b81e9f37e296d3.png",
     "index.html": "/gsg-studio/index.html",
-    "main.6272a2e4.css.map": "/gsg-studio/static/css/main.6272a2e4.css.map",
-    "main.f53ce3b6.js.map": "/gsg-studio/static/js/main.f53ce3b6.js.map",
+    "main.15b749e1.css.map": "/gsg-studio/static/css/main.15b749e1.css.map",
+    "main.330fe750.js.map": "/gsg-studio/static/js/main.330fe750.js.map",
     "787.7016f703.chunk.js.map": "/gsg-studio/static/js/787.7016f703.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6272a2e4.css",
-    "static/js/main.f53ce3b6.js"
+    "static/css/main.15b749e1.css",
+    "static/js/main.330fe750.js"
   ]
 }
