@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import bg3 from "../static/bg3.png";
 import CountUp from 'react-countup'; 
 export default function Service() {
-  const [clientsCount, setClientsCount] = useState(0);
-  const [achievementsCount, setAchievementsCount] = useState(0);
-  const [viewsCount, setViewsCount] = useState(0);
+  const [clientsCount, setClientsCount] = useState(5000);
+  const [achievementsCount, setAchievementsCount] = useState(1000);
+  const [viewsCount, setViewsCount] = useState(1000);
 
   const handleMouseEnter = () => {
     setClientsCount(5000); 

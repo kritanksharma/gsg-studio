@@ -33,7 +33,7 @@ export default function MoreInfo(props) {
         <h2 className="card-title fw-bold display-5 text-light pt-3">
           Why <span className="text-danger"> GET SET GO?</span>
         </h2>
-        <p className="card-text fs-6 mt-3 text-light pb-5">{props.head[0].headDescription}</p>
+        <p className="card-text fs-6 mt-3 text-light pb-5 px-4">{props.head[0].headDescription}</p>
       </div>
 
       <div style={{background:'#1A1C23'}}>

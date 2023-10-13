@@ -19,12 +19,13 @@ export default function Footer() {
               alt="Logo"
               width="50"
               height="50"
+              className="mt-1"
             />
     
-        <p className="text-light">
+        <p className="text-light mx-3">
           <small>
             Copyright @2023 GET SET GO Studio . All Rights Reserved by GET SET
-            GO Studio.   
+            GO Studio.  | 
           </small>
           <span>
           <a href="/" className="text-light icon">

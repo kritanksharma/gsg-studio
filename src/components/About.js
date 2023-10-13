@@ -3,6 +3,8 @@ import s1 from "../static/s1.jpeg";
 import s2 from "../static/s2.jpeg";
 import s3 from "../static/s3.jpeg";
 import logo2 from "../static/about.png";
+
+
 export default function About() {
   const workData = [
     {
@@ -41,7 +43,7 @@ export default function About() {
     "Our studio is the place where all the creativity takes place and ideas come to life! Let’s have a look at our brilliant set ups.";
 
   const about = [
-    { title: "ABOUT US !!" },
+    { title: "About GET SET GO" , subtitle:"India's Premium VASS Platform"},
     {
       paragraph1:
         "Welcome to Get Set Go, the creative production studio that's here to take your brand to soaring heights! We are the architects of high-quality content that not only speaks your message but elevates it to a level of excellence you've never imagined. ",
@@ -107,9 +109,12 @@ export default function About() {
               />
             </div>
             <div className="col-md-8">
-              <h3 className="display-6  fw-bold text-end px-5">
+              <h3 className="display-5 fw-bold text-end px-2">
                 {about[0].title}
               </h3>
+              <h4 className="text-end  mx-2">
+                <span className="px-3" style={{ background: "#DC3545 " }} >
+                  {about[0].subtitle}</span></h4>
               <div className="card-body">
                 <p className="card-text text-start">{about[1].paragraph1}</p>
                 <p className="card-text text-start">{about[2].paragraph2}</p>
@@ -169,12 +174,12 @@ export default function About() {
         <h3 className="display-6 text-light bg-dark mx-2 text-start ">{title2}</h3>
         <p className="text-light bg-dark mx-2 text-start ">{subtitle2}</p>
 
-        <div className="d-flex flex-row mb-3 mx-5 px-5 overflow-auto scroll-container">
+        <div className="d-flex flex-row mb-3 mx-2 px-2 overflow-auto scroll-container">
       {images.map((item, index) => (
         <div key={index} className="scroll-loop">
           <div
             className="card border-0 shadow-lg overflow-hidden card-focus-animation mx-2 rounded-0 my-3"
-            style={{ width: "40vh", backgroundColor: "#1A1C23" }}
+            style={{ width: "60vh", backgroundColor: "#1A1C23" }}
           >
             <img
               src={item.image}

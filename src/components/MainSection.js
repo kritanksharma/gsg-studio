@@ -47,7 +47,7 @@ export default function MainSection({ onExploreMoreClick }) {
           <p className="card-text fs-6 text-secondary">{content}</p>
 
           <button type="button" className="btn btn-outline-danger mr-3 mt-2" onClick={() => onExploreMoreClick(true)}>
-              Explore More
+          Explore Our Video Production Showcase
           </button>
         </div>
         <video
